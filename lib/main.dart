@@ -42,6 +42,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Authenticator(
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         scaffoldMessengerKey: NotificationService.messengerKey,
         builder: Authenticator.builder(),
         home: const Scaffold(
