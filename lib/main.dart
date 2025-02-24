@@ -102,6 +102,7 @@ class _TodoScreenState extends State<TodoScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton.extended(
+        icon: const Icon(Icons.shuffle_outlined),
         label: const Text('Add Random Todo'),
         onPressed: () async {
           final newTodo = Todo(
